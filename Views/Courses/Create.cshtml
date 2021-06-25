@@ -1,0 +1,103 @@
+﻿@model GolfMatrix.Models.Course
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Course</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CourseName" class="control-label"></label>
+                <input asp-for="CourseName" class="form-control" />
+                <span asp-validation-for="CourseName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseLength" class="control-label"></label>
+                <input asp-for="CourseLength" class="form-control" />
+                <span asp-validation-for="CourseLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TournamentName" class="control-label"></label>
+                <input asp-for="TournamentName" class="form-control" />
+                <span asp-validation-for="TournamentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RelSGTLs" class="control-label"></label>
+                <input asp-for="RelSGTLs" class="form-control" />
+                <span asp-validation-for="RelSGTLs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GrassType" class="control-label"></label>
+                <input asp-for="GrassType" class="form-control" />
+                <span asp-validation-for="GrassType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Par5Count" class="control-label"></label>
+                <input asp-for="Par5Count" class="form-control" />
+                <span asp-validation-for="Par5Count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Par4Count" class="control-label"></label>
+                <input asp-for="Par4Count" class="form-control" />
+                <span asp-validation-for="Par4Count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Par3Count" class="control-label"></label>
+                <input asp-for="Par3Count" class="form-control" />
+                <span asp-validation-for="Par3Count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseNotes" class="control-label"></label>
+                <input asp-for="CourseNotes" class="form-control" />
+                <span asp-validation-for="CourseNotes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Outcomes" class="control-label"></label>
+                <input asp-for="Outcomes" class="form-control" />
+                <span asp-validation-for="Outcomes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseTop6" class="control-label"></label>
+                <input asp-for="CourseTop6" class="form-control" />
+                <span asp-validation-for="CourseTop6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseMap" class="control-label"></label>
+                <input asp-for="CourseMap" class="form-control" />
+                <span asp-validation-for="CourseMap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WeatherConsiderations" class="control-label"></label>
+                <input asp-for="WeatherConsiderations" class="form-control" />
+                <span asp-validation-for="WeatherConsiderations" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StatSheet" class="control-label"></label>
+                <input asp-for="StatSheet" class="form-control" />
+                <span asp-validation-for="StatSheet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

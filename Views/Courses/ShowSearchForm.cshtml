@@ -1,0 +1,57 @@
+﻿
+
+<h4>Global Search</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchResults">
+            <div class="form-group">
+                <label for="SearchPhrase" class="control-label">Course Name</label>
+                <input name="SearchPhrase" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+        <form asp-action="ShowSearchResultsSG">
+            <div class="form-group">
+                <label for="SearchPhrase" class="control-label">RelSGTLs</label>
+                <input name="SearchPhrase" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+        <form asp-action="ShowSearchResultsGrassType">
+            <div class="form-group">
+                <label for="SearchPhrase" class="control-label">Grass Type</label>
+                <input name="SearchPhrase" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+        <form asp-action="ShowSearchResultsCourseNotes">
+            <div class="form-group">
+                <label for="SearchPhrase" class="control-label">Course Notes</label>
+                <input name="SearchPhrase" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+        <form asp-action="ShowSearchResultsTop6">
+            <div class="form-group">
+                <label for="SearchPhrase" class="control-label">Top 6 Finishes (Players)</label>
+                <input name="SearchPhrase" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

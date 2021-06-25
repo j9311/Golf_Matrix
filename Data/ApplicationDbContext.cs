@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using GolfMatrix.Models;
 
 namespace GolfMatrix.Data
 {
@@ -12,5 +13,6 @@ namespace GolfMatrix.Data
             : base(options)
         {
         }
+        public DbSet<GolfMatrix.Models.Course> Course { get; set; }
     }
 }
