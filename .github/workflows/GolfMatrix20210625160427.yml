@@ -30,9 +30,8 @@ jobs:
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
-        credentials: ${{ secrets.AZURE_CREDENTIALS }}
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.GOLFMATRIX20210625160427_FFFF }}
+        publish-profile: ${{ secrets.AZURE_CREDENTIALS }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
     - name: Publish Artifacts
       uses: actions/upload-artifact@v1.0.0
